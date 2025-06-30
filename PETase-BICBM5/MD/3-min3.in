@@ -1,0 +1,12 @@
+Minimization
+ &cntrl
+ imin   = 1,
+ maxcyc = 1500,
+ ncyc   = 500,
+ ntb    = 1,
+ ntr    = 0,
+ cut    = 10
+ /
+END
+
+
