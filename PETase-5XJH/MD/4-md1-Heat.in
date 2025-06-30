@@ -1,0 +1,37 @@
+Heating up the system 200 ps Stage 1-- Constant Volume--
+&cntrl
+ imin=0, irest=0, ntx=1, ntpr=500, ntwr=500, ntwx=1000,
+
+ nstlim=100000, dt=0.002,
+
+ tempi=10.0, temp0=310.0, ntt=3, ig=-1, gamma_ln=5.0,
+
+ ntb=1, ntp=0, cut=10.0,
+
+ ntc=2, ntf=2,
+
+ nrespa=1, ioutfm=1, iwrap=1,
+ 
+ ntr= 1,
+&end
+&ewald
+ skinnb=2.0,
+
+&end
+Hold the terminal fixed
+30.0
+RES 1
+RES 57 61
+RES 63 64
+RES 90
+RES 130 132
+RES 156
+RES 179
+RES 208 209
+RES 212
+RES 263
+END
+END
+END
+END
+

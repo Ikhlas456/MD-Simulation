@@ -1,0 +1,24 @@
+Minimization
+ &cntrl
+ imin   = 1,
+ maxcyc = 1500,
+ ncyc   = 500,
+ ntb    = 1,
+ ntr    = 1,
+ cut    = 10
+ /
+Hold the active-site fixed
+500.0
+RES 1
+RES 57 61
+RES 63 64
+RES 90
+RES 130 132
+RES 156
+RES 179
+RES 208 209
+RES 212
+RES 263
+END
+END
+

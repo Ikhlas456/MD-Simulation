@@ -1,0 +1,22 @@
+source leaprc.gaff
+set default PBRadii mbondi2
+ligand = loadmol2 Subs_gaff.mol2
+loadamberparams ligand.frcmod
+saveoff ligand ligand.lib
+saveamberparm ligand ligand.prmtop ligand.inpcrd
+source leaprc.gaff
+set default PBRadii mbondi2
+source leaprc.protein.ff14SB	
+loadamberparams ligand.frcmod
+rec = loadpdb reseptor.pdb
+source leaprc.gaff
+set default PBRadii mbondi2
+saveamberparm rec rec.prmtop rec.inpcrd	
+complex = combine { rec ligand }
+saveamberparm complex complex.prmtop complex.inpcrd
+source leaprc.water.tip3p						
+charge complex
+addIons complex Na+ 0
+solvatebox complex TIP3PBOX 12.0
+saveamberparm complex complex-solvated.prmtop complex-solvated.inpcrd
+quit
