@@ -1,0 +1,1 @@
+parmchk2 -i Subs_gaff.mol2 -f mol2 -o ligand.frcmod

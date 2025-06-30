@@ -1,0 +1,117 @@
+####################################################
+#RoG 100 ns
+
+
+parm ../../MD/complex-solvated.prmtop
+
+trajin ../../MD/md7.nc
+trajin ../../MD/md8.nc
+trajin ../../MD/md9.nc
+trajin ../../MD/md10.nc
+trajin ../../MD/md11.nc
+trajin ../../MD/md12.nc
+trajin ../../MD/md13.nc
+trajin ../../MD/md14.nc
+trajin ../../MD/md15.nc
+trajin ../../MD/md16.nc
+trajin ../../MD/md17.nc
+trajin ../../MD/md18.nc
+trajin ../../MD/md19.nc
+trajin ../../MD/md20.nc
+trajin ../../MD/md21.nc
+trajin ../../MD/md22.nc
+trajin ../../MD/md23.nc
+trajin ../../MD/md24.nc
+trajin ../../MD/md25.nc
+trajin ../../MD/md26.nc
+trajin ../../MD/md27.nc
+trajin ../../MD/md28.nc
+trajin ../../MD/md29.nc
+trajin ../../MD/md30.nc
+trajin ../../MD/md31.nc
+trajin ../../MD/md32.nc
+trajin ../../MD/md33.nc
+trajin ../../MD/md34.nc
+trajin ../../MD/md35.nc
+trajin ../../MD/md36.nc
+trajin ../../MD/md37.nc
+trajin ../../MD/md38.nc
+trajin ../../MD/md39.nc
+trajin ../../MD/md40.nc
+trajin ../../MD/md41.nc
+trajin ../../MD/md42.nc
+trajin ../../MD/md43.nc
+trajin ../../MD/md44.nc
+trajin ../../MD/md45.nc
+trajin ../../MD/md46.nc
+trajin ../../MD/md47.nc
+trajin ../../MD/md48.nc
+trajin ../../MD/md49.nc
+trajin ../../MD/md50.nc
+trajin ../../MD/md51.nc
+trajin ../../MD/md52.nc
+trajin ../../MD/md53.nc
+trajin ../../MD/md54.nc
+trajin ../../MD/md55.nc
+trajin ../../MD/md56.nc
+trajin ../../MD/md57.nc
+trajin ../../MD/md58.nc
+trajin ../../MD/md59.nc
+trajin ../../MD/md60.nc
+trajin ../../MD/md61.nc
+trajin ../../MD/md62.nc
+trajin ../../MD/md63.nc
+trajin ../../MD/md64.nc
+trajin ../../MD/md65.nc
+trajin ../../MD/md66.nc
+trajin ../../MD/md67.nc
+trajin ../../MD/md68.nc
+trajin ../../MD/md69.nc
+trajin ../../MD/md70.nc
+trajin ../../MD/md71.nc
+trajin ../../MD/md72.nc
+trajin ../../MD/md73.nc
+trajin ../../MD/md74.nc
+trajin ../../MD/md75.nc
+trajin ../../MD/md76.nc
+trajin ../../MD/md77.nc
+trajin ../../MD/md78.nc
+trajin ../../MD/md79.nc
+trajin ../../MD/md80.nc
+trajin ../../MD/md81.nc
+trajin ../../MD/md82.nc
+trajin ../../MD/md83.nc
+trajin ../../MD/md84.nc
+trajin ../../MD/md85.nc
+trajin ../../MD/md86.nc
+trajin ../../MD/md87.nc
+trajin ../../MD/md88.nc
+trajin ../../MD/md89.nc
+trajin ../../MD/md90.nc
+trajin ../../MD/md91.nc
+trajin ../../MD/md92.nc
+trajin ../../MD/md93.nc
+trajin ../../MD/md94.nc
+trajin ../../MD/md95.nc
+trajin ../../MD/md96.nc
+trajin ../../MD/md97.nc
+trajin ../../MD/md98.nc
+trajin ../../MD/md99.nc
+trajin ../../MD/md100.nc
+trajin ../../MD/md101.nc
+trajin ../../MD/md102.nc
+trajin ../../MD/md103.nc
+trajin ../../MD/md104.nc
+trajin ../../MD/md105.nc
+trajin ../../MD/md106.nc
+
+
+reference ../../MD/min3.crd
+autoimage
+
+center origin :1-275
+image origin center familiar
+
+radgyr '!(:WAT,Cl-,Na+) & !(@H=)' out RESULTS_analysis_rg.dat mass nomax
+
+go

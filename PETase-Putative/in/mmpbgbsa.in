@@ -1,0 +1,34 @@
+Input file for running PB and GB
+&general
+  startframe=1,
+  endframe=2000,
+  interval=1,
+  receptor_mask=":1-274",
+  ligand_mask=":275",
+  strip_mask=:WAT:Cl-:Na+,
+  verbose=1,
+  entropy=0
+/
+&gb
+  igb=2,
+  surften=0.0072,
+  surfoff=0.0,
+  saltcon=0.00
+/
+#&pb
+#  indi=1.0,
+#  exdi=80.0,
+#  scale=2.0,
+#  linit=1000,
+#  prbrad=1.4,
+#  istrng=0.0,
+#  inp=1,
+#  cavity_surften=0.0072,
+#  cavity_offset=0.0,
+#  radiopt=0
+/
+&decomp
+  idecomp=1,
+  print_res="1-275",
+  dec_verbose=1
+/
