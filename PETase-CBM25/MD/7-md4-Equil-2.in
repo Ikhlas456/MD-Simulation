@@ -1,0 +1,36 @@
+system Stage 2 continue 250 ps to 1000 ps (T=310 K for 500 ps) -- Constant Pressure--
+&cntrl
+ imin=0, irest=1, ntx=5, ntpr=500, ntwr=500, ntwx=1000,
+
+ nstlim=125000, dt=0.002,
+
+ tempi=310.0, temp0=310.0, ntt=3, taup=1.0, ig=-1, gamma_ln=5.0,
+
+ ntb=2, ntp=1, pres0=1.0, cut=10.0, ntr=1,
+
+ ntc=2, ntf=2,
+ nrespa=1, ioutfm=1, iwrap=1,
+
+&end
+&ewald
+ skinnb=2.0,
+
+&end
+Hold the terminal fixed
+10.0
+RES 1
+RES 60 65
+RES 68
+RES 131 133
+RES 157
+RES 179 181
+RES 186
+RES 210 211
+RES 214
+RES 383
+END
+END
+END
+END
+END
+
