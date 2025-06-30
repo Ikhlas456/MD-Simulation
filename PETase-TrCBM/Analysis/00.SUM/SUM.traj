@@ -1,0 +1,38 @@
+#!/bin/bash
+#RUN ESSENTIAL ANALYSIS BY CPPTRJ#
+
+####################################################
+#RMSD 20 ns
+
+
+parm ../../MD/complex-solvated.prmtop
+
+trajin ../../MD/md87.nc
+trajin ../../MD/md88.nc
+trajin ../../MD/md89.nc
+trajin ../../MD/md90.nc
+trajin ../../MD/md91.nc
+trajin ../../MD/md92.nc
+trajin ../../MD/md93.nc
+trajin ../../MD/md94.nc
+trajin ../../MD/md95.nc
+trajin ../../MD/md96.nc
+trajin ../../MD/md97.nc
+trajin ../../MD/md98.nc
+trajin ../../MD/md99.nc
+trajin ../../MD/md100.nc
+trajin ../../MD/md101.nc
+trajin ../../MD/md102.nc
+trajin ../../MD/md103.nc
+trajin ../../MD/md104.nc
+trajin ../../MD/md105.nc
+trajin ../../MD/md106.nc
+
+
+reference ../../MD/min3.crd
+#strip :WAT,Cl- outprefix stripped
+autoimage
+ 
+trajout summd.mdcrd 
+
+go
